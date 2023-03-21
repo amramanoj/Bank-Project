@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="659.0" prefWidth="983.0" style="-fx-border-width: 0.1; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="131.0" fitWidth="161.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@tcg.PNG" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="193.0" layoutY="17.0" prefHeight="68.0" prefWidth="185.0" text="iBanking" underline="true">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="68.0" fitWidth="43.0" layoutX="130.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true" />
+      <Label alignment="CENTER" layoutX="247.0" layoutY="103.0" prefHeight="33.0" prefWidth="541.0" text="Please Choose An Account First " textFill="#0e3be1" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <VBox fx:id="main_box" layoutX="323.0" layoutY="140.0" prefHeight="389.0" prefWidth="602.0" spacing="20.0">
+         <children>
+            <HBox prefHeight="129.0" prefWidth="637.0" spacing="100.0">
+               <children>
+                  <AnchorPane fx:id="id1" prefHeight="129.0" prefWidth="155.0">
+                     <children>
+                        <ImageView fitHeight="87.0" fitWidth="102.0" layoutX="27.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@account.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="13.0" layoutY="93.0" prefHeight="17.0" prefWidth="134.0" text="Account Detail">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="id2" layoutX="10.0" layoutY="10.0" prefHeight="129.0" prefWidth="155.0">
+                     <children>
+                        <ImageView fitHeight="87.0" fitWidth="102.0" layoutX="27.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@dipo.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="13.0" layoutY="93.0" prefHeight="17.0" prefWidth="134.0" text="Deposit">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="id3" layoutX="265.0" layoutY="10.0" prefHeight="129.0" prefWidth="155.0">
+                     <children>
+                        <ImageView fitHeight="87.0" fitWidth="102.0" layoutX="27.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@with.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="13.0" layoutY="93.0" prefHeight="17.0" prefWidth="134.0" text="Withdrawal">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="129.0" prefWidth="637.0" spacing="100.0">
+               <children>
+                  <AnchorPane fx:id="id4" prefHeight="129.0" prefWidth="155.0">
+                     <children>
+                        <ImageView fitHeight="87.0" fitWidth="102.0" layoutX="27.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@tranfer.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="13.0" layoutY="93.0" prefHeight="17.0" prefWidth="134.0" text="Money tranfer">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="id5" layoutX="10.0" layoutY="10.0" prefHeight="129.0" prefWidth="155.0">
+                     <children>
+                        <ImageView fitHeight="87.0" fitWidth="102.0" layoutX="27.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@transection.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="13.0" layoutY="93.0" prefHeight="17.0" prefWidth="134.0" text="Trasection History">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="33.0" layoutY="323.0" prefHeight="290.0" prefWidth="233.0" style="-fx-border-color: #000000; -fx-border-width: 0.2;">
+         <children>
+            <VBox layoutX="66.0" prefHeight="289.0" prefWidth="169.0" spacing="30.0" style="-fx-padding: 10;">
+               <children>
+                  <Button fx:id="account_detail_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="205.0" text="Account Detail" />
+                  <Button fx:id="deposit" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="205.0" text="Deposit" />
+                  <Button fx:id="withdrawal" layoutX="10.0" layoutY="75.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="205.0" text="Withdrawal" />
+                  <Button fx:id="transfer" layoutX="10.0" layoutY="140.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="205.0" text="Money Transfer" />
+                  <Button fx:id="history_btn" layoutX="10.0" layoutY="205.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="205.0" text="Transection History" />
+               </children>
+            </VBox>
+            <VBox prefHeight="289.0" prefWidth="33.0" spacing="30.0">
+               <children>
+                  <ImageView fitHeight="33.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@account.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="61.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@dipo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="61.0" layoutX="10.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@with.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="61.0" layoutX="10.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@tranfer.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="61.0" layoutX="10.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@transection.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="34.0" layoutY="152.0" prefHeight="135.0" prefWidth="233.0" style="-fx-border-color: #000000; -fx-border-width: 0.2;">
+         <children>
+            <Label layoutX="20.0" layoutY="6.0" prefHeight="17.0" prefWidth="193.0" text="Current Account Summary">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <VBox layoutX="14.0" layoutY="39.0" prefHeight="129.0" prefWidth="80.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="77.0" text="ACCOUNT ID :">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="77.0" text="AMOUNT  :">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="10.0" layoutY="47.0" prefHeight="17.0" prefWidth="77.0" text="TYPE   :">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="110.0" layoutY="39.0" prefHeight="129.0" prefWidth="119.0" spacing="20.0" AnchorPane.bottomAnchor="1.0">
+               <children>
+                  <Label fx:id="aid" prefHeight="17.0" prefWidth="117.0" text="">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bal" layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="117.0" text="0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="29.0" prefHeight="17.0" prefWidth="117.0" text="SAVING">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+      <AnchorPane fx:id="add" layoutX="318.0" layoutY="152.0" prefHeight="95.0" prefWidth="335.0" visible="false">
+         <children>
+            <TextField fx:id="amount" alignment="CENTER" layoutY="-1.0" prefHeight="40.0" prefWidth="369.0" promptText="Enter amount">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btn_aw" layoutX="104.0" layoutY="59.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="161.0" style="-fx-background-color: #544f32;" text="Deposit" textFill="#ffef95">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+
+
+
+      <AnchorPane fx:id="account_detail" layoutX="286.0" layoutY="152.0" prefHeight="235.0" prefWidth="512.0" visible="false">
+         <children>
+            <VBox layoutY="14.0" prefHeight="258.0" prefWidth="437.0" spacing="10.0">
+               <children>
+                  <HBox prefHeight="49.0" prefWidth="437.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="187.0" text="Full Name :">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="full_name" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="47.0" prefWidth="247.0" text="Amra RAm">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="49.0" prefWidth="437.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="187.0" text="Mobile Number:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="mobile_number" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="47.0" prefWidth="247.0" text="6378820280">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="69.0" prefHeight="49.0" prefWidth="437.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="187.0" text="Aadhar Number">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="adr_number" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="47.0" prefWidth="247.0" text="316213174230">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="128.0" prefHeight="49.0" prefWidth="437.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="187.0" text="Balance     ₹    ">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ac_balance" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="47.0" prefWidth="247.0" text="0">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Label fx:id="home" layoutX="20.0" layoutY="128.0" prefHeight="17.0" prefWidth="51.0" text="Home" textFill="#0a23f0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="logOut" layoutX="797.0" layoutY="63.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="134.0" style="-fx-background-color: #646368;" text="Log Out" textFill="#f2f7fc">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <AnchorPane fx:id="transfer_pane" layoutX="345.0" layoutY="201.0" prefHeight="180.0" prefWidth="324.0" visible="false">
+         <children>
+            <AnchorPane fx:id="add1" layoutY="37.0" prefHeight="151.0" prefWidth="379.0">
+               <children>
+                  <TextField fx:id="re_bankId" alignment="CENTER" layoutY="-1.0" prefHeight="40.0" prefWidth="369.0" promptText="Enter receiver bank Id">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="send" layoutX="104.0" layoutY="110.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="161.0" style="-fx-background-color: #544f32;" text="Send" textFill="#ffef95">
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="re_amount" alignment="CENTER" layoutY="53.0" prefHeight="40.0" prefWidth="369.0" promptText="Enter amount">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <Label alignment="CENTER" layoutX="-3.0" layoutY="14.0" prefHeight="20.0" prefWidth="385.0" text="Enter Receiver Bank Id" textFill="#053910">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="bank_history" layoutX="300.0" layoutY="152.0" prefHeight="504.0" prefWidth="624.0" visible="false">
+        <columns>
+          <TableColumn prefWidth="194.0" text="Date" />
+          <TableColumn prefWidth="151.0" text="From / To" />
+            <TableColumn prefWidth="126.0" text="amount" />
+            <TableColumn prefWidth="163.0" text="Type" />
+        </columns>
+      </TableView>
+
+
+
+   </children>
+</AnchorPane>
